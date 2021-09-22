@@ -1,7 +1,7 @@
-resource "aws_internet_gateway" "LUIT_ig" {
-  vpc_id = aws_vpc.LUIT_terraform_vpc.id
+resource "aws_internet_gateway" "Project_IG" {
+  vpc_id = aws_vpc.Project_Terraform_VPC  .id
   
   tags = {
-    Name = "LUIT internet gateway"
+    Name = "Project Internet Gateway"
   }
 }
